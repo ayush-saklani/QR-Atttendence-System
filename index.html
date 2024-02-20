@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <title>automated attendence system</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/media/logo3.png">
+</head>
+<body>
+    <div class="header">
+        <img id ='logo' src="media/logo3.png" alt="logo" height="85px">
+        <h1 id='heading'>automated attendence system (Student)</h1>
+    </div>
+    <div id="mainform">
+        <div class="formdiv">
+            <label class="labelmaker">Name:</label>
+            <label class="labelmaker">Rollno:</label>
+            <label class="labelmaker">Section:</label>
+            <label class="labelmaker">Student ID:</label>
+            <label class="labelmaker">Campus:</label>
+        </div>
+        <div class="formdiv">
+            <input type="text" class="boxy" id="name_val" placeholder="Name">
+            <input type="text" class="boxy" id="roll_val" placeholder="Roll no">
+            <input type="text" class="boxy" id="section_val" placeholder="Section">
+            <input type="text" class="boxy" id="studentid_val" placeholder="StudentID">
+            <select name="campus" id="campus_val" class="boxy">
+                <option value="GEHU">GEHU</option>
+                <option value="GEU">GEU</option>
+            </select> 
+        </div>
+    </div>
+    <div class="formdiv">
+        <button class="boxy" id="go">Mark my Spot</button>
+    </div>
+    <div id="imageContainer">
+
+    </div>
+      
+    <script src="index.js"></script>
+</body>
+</html>

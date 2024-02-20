@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0; 
+    box-sizing: border-box;
+    justify-content: center;
+    size: 100%;
+    font-family:"anta";
+}
+#mainform{
+    display:flex;
+    flex-direction: row;
+}
+.formdiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    display:flex;
+    justify-content:center;
+    padding: 8px;
+    /* position: absolute;; */
+    z-index: 1;
+}
+#heading{
+    color: rgb(50, 113, 116);
+    align-self: center;
+    padding: 8px;
+    font-family:anta;
+    font-size: xx-large;
+    text-align:center;    
+}
+.labelmaker{
+    align-items: center;
+    padding: 2px;
+    width: 150px;
+    text-align: center;
+    font-family:"anta";
+    font-size:larger;
+    margin: 4px ;
+    margin-top:   auto;
+    margin-bottom:auto ;
+}
+.boxy{
+    align-items: center;
+    border-color: rgba(240, 248, 255, 0.259);
+    background-color: rgba(240, 248, 255, 0.259);
+    padding: 2px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    font-size:larger;
+    margin: 4px ;
+    border-radius:9px;
+}
+.boxy:hover{
+    background-color: rgba(241, 244, 246, 0.63);
+}
+#go{
+    background-color: rgb(50, 113, 116);
+    color: rgb(255, 255, 255);
+    width:  150px;
+    border-radius:20px;
+    padding: 5px;
+    white-space: nowrap;
+}
+#go:hover{
+    background-color: rgb(36, 83, 86);
+}
+#campus{
+    border-color: rgba(169, 170, 170, 0.259);
+    background-color: rgba(240, 248, 255, 0.259);
+}
+#campus:hover{
+    background-color: rgba(241, 244, 246, 0.63);
+}
+#imageContainer{
+    text-align: center;
+    margin-top: 40px;
+}
+#qrimg{
+    /* height: 300px; */
+}
