@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta charset="UTF-8"> -->
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>automated attendence system</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +13,11 @@
 </head>
 <body>
     <div class="header">
-        <img id ='logo' src="media/logo3.png" alt="logo" height="85px">
-        <h1 id='heading'>automated attendence system (Student)</h1>
+        <a href="index_admin.html"><img src="media/logo3.png" alt="Logo" height="85px"></a>
+        <!-- <img id ='logo' src="media/logo3.png" alt="logo" height="85px" > -->
+        <h1 id='heading'>automated attendence system<br>(Student)</h1>
     </div>
+    <div id="imageContainer"></div>
     <div id="mainform">
         <div class="formdiv">
             <label class="labelmaker">Name:</label>
@@ -37,10 +40,7 @@
     <div class="formdiv">
         <button class="boxy" id="go">Mark my Spot</button>
     </div>
-    <div id="imageContainer">
-
-    </div>
-      
+    <!-- <a href="index_admin.html" id="admin_link">Teacher</a> -->
     <script src="index.js"></script>
 </body>
 </html>
