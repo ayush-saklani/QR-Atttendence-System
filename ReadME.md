@@ -62,5 +62,8 @@ The Smart Attendance Marking System is a web-based application designed to strea
 
 Contributions are welcome! Please follow the guidelines outlined in `CONTRIBUTING.md`.
 
+## Links 
 
-https://scanapp.org/html5-qrcode-docs/docs/introhttps://scanapp.org/html5-qrcode-docs/docs/intro
+* https://goqr.me/api/
+* https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example
+* https://scanapp.org/html5-qrcode-docs/docs/introhttps://scanapp.org/html5-qrcode-docs/docs/intro
