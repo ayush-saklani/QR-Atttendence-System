@@ -32,16 +32,11 @@ The Smart Attendance Marking System is a web-based application designed to strea
 ## Installation
 
 1. Clone the repository:
-
 2. Install dependencies:
-
-
 3. Set up the database:
 - Use the provided SQL script to create the necessary tables.
-
 4. Configure the application:
 - Set up environment variables for database connection details, authentication keys, etc.
-
 5. Run the application:
 
 
