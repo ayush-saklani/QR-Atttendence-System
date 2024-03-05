@@ -1,4 +1,4 @@
-document.getElementById('go').addEventListener('click', () => {
+document.getElementById('download').addEventListener('click', () => {
     let container = document.getElementById("imageContainer");
     container.innerHTML = "";
     
