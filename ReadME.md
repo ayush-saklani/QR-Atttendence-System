@@ -34,24 +34,24 @@ The Smart Attendance Marking System is a web-based application designed to strea
 1. Clone the repository:
 2. Install dependencies:
 3. Set up the database:
-- Use the provided SQL script to create the necessary tables.
+    - Use the provided SQL script to create the necessary tables.
 4. Configure the application:
-- Set up environment variables for database connection details, authentication keys, etc.
+    - Set up environment variables for database connection details, authentication keys, etc.
 5. Run the application:
 
 
 ## Usage
 
 1. **Student Submission:**
-- Students should access the provided web form and fill out their details.
-- Upon submission, a QR code containing their details will be generated.
+    - Students should access the provided web form and fill out their details.
+    - Upon submission, a QR code containing their details will be generated.
 
 2. **Teacher Attendance Management:**
-- Teachers should access the teacher portal and scan the QR codes presented by students.
-- Scanned QR codes will display the student's details for verification, and teachers can mark attendance accordingly.
+    - Teachers should access the teacher portal and scan the QR codes presented by students.
+    - Scanned QR codes will display the student's details for verification, and teachers can mark attendance accordingly.
 
 3. **CSV File Download:**
-- Teachers can download attendance records in CSV format from the application interface.
+    - Teachers can download attendance records in CSV format from the application interface.
 
 ## Contributing
 
