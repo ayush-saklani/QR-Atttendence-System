@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demo</title>>
+
+    <script>
+        var data = [
+        ["name1", 1, 2, 3],
+        ["name2", 4, 54, 44],
+        ["name3", 212, 212, 1213],
+        ["name4", 32, 133, 33]
+        ];
+
+
+        function generateCSV() {
+            var csv = 'Name, Value1, Value2, Value3\n';
+            data.forEach(function(row) {
+                csv += row.join(',');
+                csv += "\n";
+            });
+
+            var hiddenElement = document.createElement('a');
+            hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
+            hiddenElement.target = '_blank';
+            hiddenElement.download = 'data.csv';
+            hiddenElement.click();
+        }
+    </script>
 </head>
 <body>
-    
+    <button onclick="generateCSV()"> Download</button> 
 </body>
 </html>
