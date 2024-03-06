@@ -103,7 +103,9 @@ video{
         margin: auto; 
     } 
     video{
+        overflow: hidden;
         width: 300px;
+        height: 300px;
         margin: 0;
     }
 }

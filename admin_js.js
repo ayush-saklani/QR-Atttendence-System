@@ -23,7 +23,7 @@ function onScanSuccess(decodedText) {
 }
 let html5QrcodeScanner = new Html5QrcodeScanner(
   "reader",
-  { fps: 10, qrbox: 280 , facingMode: "environment" }, verbose=true
+  { fps: 10, qrbox: 1000 , facingMode: "environment" }, //verbose=true
 );
 html5QrcodeScanner.render(onScanSuccess);
 
