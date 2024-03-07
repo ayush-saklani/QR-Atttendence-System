@@ -88,13 +88,19 @@
     margin-left: 10px;
 }
 video{
-    height: 300px;
+    height: auto;
 }
 #reader{
-    /* align-items: center; */
     width:  500px;
-    /* height: 500px;  */
     margin: 0 auto ; 
+}
+#marked{
+    text-align: center;
+    margin: 0 auto ; 
+    border: 2px;
+}
+.cell{
+    padding: 5px;
 }
 @media only screen and (max-width: 600px) {
      #reader{

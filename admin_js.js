@@ -18,6 +18,14 @@ function onScanSuccess(decodedText) {
         }
         data.push(temparr);
         audio.play();
+        let temprow = document.createElement("tr")
+        for(i in temp){
+            let content = document.createElement("td")
+            content.setAttribute("class", "cell")
+            content.innerHTML = temp[i];
+            temprow.append(content);
+        }
+        document.getElementById("marked").appendChild(temprow);
         console.log(data[0]);
     }
 }
