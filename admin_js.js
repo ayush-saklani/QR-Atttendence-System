@@ -11,6 +11,9 @@ function check_inArray(xx){
 }
 function onScanSuccess(decodedText) {
     let temp = (decodedText).split(','); 
+    if(data.length>0){
+        document.getElementById("marked").style.visibility="visible";
+    }
     if(!check_inArray(temp[3])){
         let temparr = []
         for(i in temp){
