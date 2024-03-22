@@ -1,5 +1,5 @@
 # **Attendance Marking System (Mark my spot)**<img src="media/logo1.png" height="100" align="left"/>
-**The Smart Attendance Marking web-based application. *(currently under development)***
+**The Smart Attendance Marking web-based application. *(currently under final developmental stages)***
 
 #
 
