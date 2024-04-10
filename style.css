@@ -21,6 +21,9 @@ body{
     .socials{
         display: none;
     }
+    #mrmime{
+        visibility: hidden;
+    }
 }
 @media (max-width: 768px) {
     /* .navbar img,h2{
