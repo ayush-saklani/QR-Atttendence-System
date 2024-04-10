@@ -1,46 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>automated attendence system</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <title>Student | QR Attendence system</title>
+    <link rel="icon" href="/media/logo2.png">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="/media/logo2.png">
 </head>
+
 <body>
-    <div class="header">
-        <a href="index_admin.html"><img src="media/logo2.png" alt="Logo" height="85px"></a>
-        <!-- <img id ='logo' src="media/logo3.png" alt="logo" height="85px" > -->
-        <h1 id='heading'>automated attendence system<br>(Student)</h1>
-    </div>
-    <div id="imageContainer"></div>
-    <div id="mainform">
-        <div class="formdiv">
-            <label class="labelmaker">Name:</label>
-            <label class="labelmaker">Rollno:</label>
-            <label class="labelmaker">Section:</label>
-            <label class="labelmaker">Student ID:</label>
-            <label class="labelmaker">Campus:</label>
+    <nav class="navbar navbar-expand p-2">
+        <div class="container-fluid my-1">
+            <a href="index_admin.html"><img class="mx-2" src="media/logo2.png" height="80px"></a>
+            <h2 class="text-header text-light me-auto ms-2"><b>QR Attendence system (Student)</b></h2>
         </div>
-        <div class="formdiv">
-            <input type="text" class="boxy" id="name_val" placeholder="Name">
-            <input type="text" class="boxy" id="roll_val" placeholder="Roll no">
-            <input type="text" class="boxy" id="section_val" placeholder="Section">
-            <input type="text" class="boxy" id="studentid_val" placeholder="StudentID">
-            <select name="campus" id="campus_val" class="boxy">
-                <option value="GEHU">GEHU</option>
-                <option value="GEU">GEU</option>
-            </select> 
+    </nav>
+    <div class="container my-4 row m-auto" oncontextmenu="return false;">
+        <div class="my-2" id="tabparent">
+            <div id="imageContainer"></div>
+            <div class="col-md-6 m-auto">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control text-header" id="name_val" placeholder="name@example.com">
+                    <label for="floatingInput" class="text-header">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control text-header" id="roll_val">
+                    <label for="floatingPassword" class="text-header">Roll no</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control text-header" id="studentid_val">
+                    <label for="floatingPassword" class="text-header">Student ID</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select text-header" id="campus_val">
+                      <option selected value="GEHU">GEHU</option>
+                      <option value="GEU">GEU</option>
+                    </select>
+                    <label for="floatingSelect" class="text-header">Campus</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select text-header" id="section_val">
+                      <option selected value="A">A</option>
+                      <option value="B">B</option>
+                      <option value="C">C</option>
+                      <option value="D">D</option>
+                      <option value="E">E</option>
+                      <option value="F">F</option>
+                      <option value="G">G</option>
+                      <option value="H">H</option>
+                      <option value="I">I</option>
+                      <option value="J">J</option>
+                      <option value="K">K</option>
+                      <option value="L">L</option>
+                      <option value="M">M</option>
+                      <option value="N">N</option>
+                      <option value="O">O</option>
+                      <option value="P">P</option>
+                      <option value="Q">Q</option>
+                      <option value="R">R</option>
+                      <option value="S">S</option>
+                      <option value="T">T</option>
+                      <option value="U">U</option>
+                      <option value="V">V</option>
+                      <option value="W">W</option>
+                      <option value="X">X</option>
+                      <option value="Y">Y</option>
+                      <option value="Z">Z</option>
+                    </select>
+                    <label for="floatingSelect" class="text-header">Section</label>
+                </div>
+                <button type="submit" id="download" class="btn btn-outline-info btn-lg mb-3 col-12 text-header"><b>Mark my Spot</b></button>
+            </div>
         </div>
     </div>
-    <div class="formdiv">
-        <button class="boxy" id="download">Mark my Spot</button>
+    <div class="position-absolute top-50 end-0 translate-middle-y socials">
+        <div class="btn-group-vertical social-links" role="group" aria-label="Vertical button group">
+            <a class="p-2 m-1 text-light h1" href="https://www.linkedin.com/in/ayush-saklani/" target="_blank"><i
+                    class="devicon-github-original"></i></a>
+            <a class="p-2 m-1 text-light h1" href="https://github.com/ayush-saklani" target="_blank"><i
+                    class="devicon-linkedin-plain"></i></a>
+        </div>
     </div>
-    <!-- <a href="index_admin.html" id="admin_link">Teacher</a> -->
+    
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
+

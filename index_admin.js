@@ -1,11 +1,12 @@
 // To use Html5QrcodeScanner (more info below)
 // import {Html5QrcodeScanner} from "html5-qrcode";
 var data=[];
+let head_count = 1;
 var audio = new Audio('/media/smb_coin.wav');
-function check_inArray(xx){
+function check_inArray(token){
     var count=data.length;
     for(var i=0;i<count;i++){
-        if(data[i][3]===xx){return true;}
+        if(data[i][3]===token){return true;}
     }
     return false;
 }
@@ -22,9 +23,15 @@ function onScanSuccess(decodedText) {
         data.push(temparr);
         audio.play();
         let temprow = document.createElement("tr")
+        let content = document.createElement("th");
+        content.setAttribute("class", "text-header table-dark text-center");
+        content.setAttribute("scope", "row");
+        content.innerHTML = head_count;
+        head_count++;
+        temprow.append(content);
         for(i in temp){
-            let content = document.createElement("td")
-            content.setAttribute("class", "cell")
+            content = document.createElement("td");
+            content.setAttribute("class", "text-header table-dark text-center");
             content.innerHTML = temp[i];
             temprow.append(content);
         }
